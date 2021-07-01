@@ -10,6 +10,7 @@ body {
 }
 .container-fluid {
    position: relative;
+   display: flex; 
    width: 100vw;
    height: 100vh;
 }
@@ -21,23 +22,26 @@ body {
 .sidbar-sx {
    width: 300px;
    height: 100%;
-   padding: 20px;
    background-color: black;
    display: flex;
    flex-direction: column;
-   /* justify-content: space-around; */
+}
+
+.green {
+   border-left: 2px solid greenyellow;
 }
 
 .container {
-   position: absolute;
-   top: 0px;
-   right: 0px;
    display: flex;
-   width: 100%;
+   flex-direction: column;
+   justify-content: flex-start;
+   justify-content: space-around;
+   width: calc(100% - 300px); 
    height: 100%;
    overflow-y: scroll;
    background-color: #141922;
-   z-index: -1;
+   padding: 50px;
+   /* z-index: -1; */
 }
 
 #logo {
@@ -66,11 +70,19 @@ body {
    height: 8%;
    vertical-align: middle;
    padding-bottom: 10px;
+   padding-left: 2px;
 }
 
-a {
+.sidbar-sx a {
    color: #6f6f6f;
    text-decoration: none;
+   list-style-type: none;
+   list-style: none;
+   padding-left: 20px;
+}
+
+a:hover {
+   color: white;
 }
 
 span {
@@ -80,6 +92,12 @@ span {
 
 .line-tre {
    margin-top: 20px;
+}
+
+.line-tre h3 {
+   color: white;
+   padding-left: 20px;
+   margin-bottom: 10px;
 }
 
 .fa-plus-square {
@@ -103,15 +121,81 @@ span {
    vertical-align: middle;
 }
 
-.line-quattro .john a img {
-   width: 8%;
-   height: 8%;
+.line-quattro .john img {
+   width: 20px;
+   height: 20px;
    vertical-align: middle;
+   border-radius: 50%;
+   background-color: #6f6f6f;
 }
 
-hr {
-   margin: 15px 0px;
+.john span {
+   color: white;
 }
+
+.sidbar-sx hr {
+   margin-left: 30px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+/* parte centrale */
+.nav-top-cen {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.special {
+   width: 60px;
+   margin: 10px auto;
+   border-bottom: 1px solid lawngreen;
+}
+
+.nav-cen a {
+   color: #6f6f6f;
+   text-decoration: none;
+   list-style-type: none;
+   list-style: none;
+   margin: 0px 5px;
+}
+
+a:hover {
+   color: white;
+}
+
+.titoli {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+}
+
+h2 {
+   color: white;
+}
+
+.box-uno {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   margin: 0 auto;
+}
+
+.box {
+   margin: 8px 8px;
+   width: 300px;
+   text-align: center;
+}
+
+.box-uno h3, p {
+   color: white;
+   margin: 10px auto;
+}
+
+
+/* fine parte centrale */
 /* Fine Main */
 /* -------------------------------------------------- */
 /* Inizio Footer */
