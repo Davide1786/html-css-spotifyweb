@@ -1,0 +1,41 @@
+*{
+   margin: 0; 
+   padding: 0; 
+   box-sizing: border-box; 
+}
+/* -------------------------------------------------- */
+/* Inizio Common */
+.container-fluid {
+   display: flex;
+   flex-direction: row;
+}
+/* Fine Common */
+/* -------------------------------------------------- */
+
+/* Inizio Main */
+
+.sidbar-sx {
+   width: 20%;
+   height: 100vh;
+   background-color: blue;
+}
+
+.container {
+   width: 80%;
+   height: 100vh;
+   background-color: brown;
+}
+
+/* Fine Main */
+/* -------------------------------------------------- */
+/* Inizio Footer */
+
+.sidbar-bottom {
+   width: 100%;
+   height: 100px;
+   background-color: chartreuse;
+}
+/* Fine Footer */
+/* -------------------------------------------------- */
+
+/* !DEBUG ZONE! */
