@@ -28,7 +28,7 @@
    display: flex;
    flex-direction: column;
    position: relative;
-   overflow: hidden;
+   overflow: auto;
 }
 
 #container {
@@ -36,7 +36,7 @@
    width: calc(100% - 250px);
    height: calc(100vh - 100px);
    background-color: #141922;
-   overflow: scroll;
+   overflow: auto;
 }
 
 /* Inizio Main */
@@ -44,7 +44,7 @@
 /* sidbar sx */
 
 #sidbar-left-top {
-   height: 100%;
+   height: 80%;
    width: 100%;
    display: flex;
    flex-direction: column;
@@ -69,7 +69,7 @@
    bottom: 0px;
    width: 100%;
    background-color: black;
-   padding: 20px; 
+   padding: 20px;
 }
 
 /* sidbar sx */
@@ -83,8 +83,8 @@
 }
 
 #logosm {
-   filter: invert(1);
-   width: 10%;
+   height: 100%;
+   width: 100%;
    display: none;
 
 }
@@ -240,19 +240,21 @@ hr {
 /* navigazione centrale */
 
 #upgrade {
+   position: fixed;
    display: flex;
    justify-content: flex-end;
    align-items: center;
    height: 100px;
    width: 100%;
    background-color: #080b12;
+   z-index: 30;
 }
 
 .effettua {
    color: white;
    font-size: 12px;
    text-transform: uppercase;
-   margin-right: 50px;
+   margin-right: 300px;
    border: 1px solid white;
    border-radius: 50px;
    padding: 12px 34px;
@@ -268,6 +270,7 @@ hr {
    flex-direction: row;
    justify-content: center;
    flex-wrap: wrap;
+   margin-top: 100px;
 }
 
 .nav-cen a {
@@ -353,6 +356,10 @@ img[src$=".jpeg"] {
 
 .cambio:hover .fa-play-circle {
    display: block;
+}
+
+.box-tre .box img {
+   border-radius: 50%;
 }
 
 .tex {
