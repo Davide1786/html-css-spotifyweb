@@ -273,18 +273,10 @@
    }
 
 
-
  }
 
- @media all and (min-width: 992px) and (max-width: 1200px) {
 
-   .box {
-      width: calc(100% / 3 - 40px);
-   }
-
- }
-
- @media all and (min-width: 1201px) and (max-width: 1400px) {
+ @media all and (min-width: 992px) and (max-width: 1400px) {
 
    .box {
       width: calc(100% / 4 - 40px);
@@ -292,13 +284,6 @@
 
  }
 
- @media all and (min-width: 1401px) and (max-width: 1600px) {
-
-   .box {
-      width: calc(100% / 5 - 40px);
-   }
-
- }
 
  @media (min-width: 16001px) {
 
